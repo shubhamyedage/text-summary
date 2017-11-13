@@ -1,7 +1,7 @@
 function trainData() {
 var data = {
-"data": $("#trainText").val(),
-"summary": $("#sumText").val()
+"data": $("#boxText").val(),
+"summary": $("#boxSumm").val()
 }
 $.ajax({
   url: "/",
@@ -10,7 +10,7 @@ $.ajax({
   dataType: "json",
   data: JSON.stringify(data),
   success: function(data){
-  $("#outDiv #outText").text(data)
+  $("#boxResultText").text(data.summary)
   },
   error: function(data){
   alert("Error");
