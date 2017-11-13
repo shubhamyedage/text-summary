@@ -23,14 +23,14 @@ class MainPage(webapp2.RequestHandler):
 
     def post(self):
         response = {
-            "summary": "Dummy data"
+            "summary": "Training data created!"
         }
         data = self.request.body
         logging.info("---------------------------")
         logging.info(data)
         FileUtils().create_file(data=data)
         logging.info("---------------------------")
-        # Prediction().get_abstract_data(json_data=data)
+        # response = Prediction().get_abstract_data(json_data=data)
         self.response.headers['content-Type'] = 'application/json'
         self.response.out.write(json.dumps(response))
 

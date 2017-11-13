@@ -1,5 +1,5 @@
 #box{
-  width: 500px;
+  width: 1000px;
   height: auto;
   position: absolute;
   top:110px;
@@ -11,11 +11,13 @@
 
 .divInBox{
   margin: 5px 0 15px 0;
+  position: relative;
+  left: 160px;
 }
 
 .txtCommon{
   margin: 2px 0 0 0;
-  width: 400px;
+  width: 700px;
 }
 
 #boxText{
@@ -23,5 +25,5 @@
 }
 
 .summaryText{
-  height: 50px;
+  height: 80px;
 }
